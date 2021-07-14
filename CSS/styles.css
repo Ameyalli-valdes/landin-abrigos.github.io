@@ -1,0 +1,339 @@
+                                        * {
+                                                margin: 0px;
+                                                padding: 0px;
+                                                box-sizing: border-box;
+                                                /*para que las cajas no se desborden*/
+                                            }
+                                            
+                                            body {
+                                                font-family: 'Montserrat', sans-serif;
+                                                background-color: #27384D;
+                                            }
+                                            
+                                            .padre {
+                                                display: flex;
+                                                flex-flow: column nowrap;
+                                            }
+                                            
+                                            .margen-interno {
+                                                padding: 40 40 40 40px;
+                                                text-align: center;
+                                            }
+                                            
+                                            .header {
+                                                background: url(../IMG/fondomil2.png);
+                                                background-position: center;
+                                                /*posicion de fondo*/
+                                                background-attachment: contain;
+                                                /*ajuste de fondo*/
+                                                /*contain= Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.*/
+                                                background-size: cover;
+                                                /*especifica el tamaño de las imágenes de fondo = cover escala la imagen al mayor tamaño sin estirarla.*/
+                                                display: flex;
+                                                flex-flow: column nowrap;
+                                                width: 30;
+                                            }
+                                            
+                                            .menu {
+                                                background-color: rgb(0, 0, 0, .1);
+                                                display: flex;
+                                                /*ayuda a colocar las cajas como si fueran celdas de tablas, con un comportamiento predecible y adaptable*/
+                                                flex-flow: row nowrap;
+                                                /*caja flexible*/
+                                                height: 85px;
+                                                align-items: center;
+                                                /*Para centrar el texto dentro de un elemento*/
+                                                border-bottom: 4px solid rgb(221, 221, 221);
+                                            }
+                                            
+                                            .logo {
+                                                flex: 1 1 auto;
+                                            }
+                                            
+                                            .logo a {
+                                                color: #fff;
+                                                font-size: 30px;
+                                                text-decoration: none;
+                                                /*no  se traza ninguna linea*/
+                                            }
+                                            
+                                            .logo a:hover {
+                                                color: #f6f7f8;
+                                            }
+                                            
+                                            .nav {
+                                                flex: 8 1 auto;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .nav a {
+                                                color: #DDDBD3;
+                                                font-size: 20px;
+                                                text-transform: uppercase;
+                                                /*tranformar a mayusculas*/
+                                                padding: 0 10px;
+                                                letter-spacing: 2px;
+                                                /*espacio entre letras*/
+                                                text-align: center;
+                                            }
+                                            
+                                            .nav a:hover {
+                                                color: #343434;
+                                            }
+                                            
+                                            .social {
+                                                flex: 1 1 auto;
+                                                display: flex;
+                                            }
+                                            
+                                            .social a {
+                                                font-size: 18px;
+                                                color: #fff;
+                                                padding: 0 5px;
+                                            }
+                                            
+                                            .social a:hover {
+                                                font-size: 18px;
+                                                color: #343434;
+                                                padding: 0 5px;
+                                            }
+                                            
+                                            .texto-principal {
+                                                /* background-color: blueviolet;*/
+                                                /*height: 300px;*/
+                                                display: flex;
+                                                align-items: center;
+                                                text-align: center;
+                                            }
+                                            
+                                            .formulario {
+                                                height: 80px;
+                                                display: contents;
+                                                color: lightslategrey;
+                                            }
+                                            
+                                            .form {
+                                                text-align: end;
+                                            }
+                                            
+                                            h1 {
+                                                font-family: "lora", serif;
+                                                color: #DDDBD3;
+                                                font-weight: 200;
+                                                line-height: 1.6;
+                                                display: block;
+                                            }
+                                            
+                                            .texto-principal h1 {
+                                                text-align: center;
+                                            }
+                                            
+                                            .section {
+                                                background: #27384D;
+                                                display: flex;
+                                            }
+                                            
+                                            .articulo {
+                                                background-color: #474E57;
+                                                flex: 2 1 auto;
+                                                display: flex;
+                                                flex-flow: row wrap;
+                                                /*para que sea uno a lado de otro*/
+                                            }
+                                            
+                                            .article {
+                                                flex: 1 1 40%;
+                                                color: #444;
+                                                font-size: 13px;
+                                                letter-spacing: 1px;
+                                                margin: 10px 10px 0 0px;
+                                                flex: 1 1 45%;
+                                                background: #E4D9C1;
+                                                ;
+                                            }
+                                            
+                                            .article img:hover {
+                                                width: 80%;
+                                                padding: 0px;
+                                                display: block;
+                                                margin: auto;
+                                                transition: .8s;
+                                                transition-property: all;
+                                                transition-duration: 0.8s;
+                                                transition-timing-function: ease;
+                                                /*función de temporización de transición predeterminada: facilidad*/
+                                                transition-delay: 0s;
+                                            }
+                                            
+                                            .article a {
+                                                color: #fff;
+                                                font-size: 18px;
+                                                padding: 10px 10px 10px 10px;
+                                                background: #000;
+                                                margin-top: 20px 20px 20px 10px;
+                                                display: inline-block;
+                                                text-decoration: none;
+                                                opacity: .5;
+                                            }
+                                            
+                                            .article a:hover {
+                                                background: #edeef0;
+                                            }
+                                            
+                                            h3 {
+                                                color: rgb(248, 248, 245);
+                                                font-size: 20px;
+                                                padding: 10px 0;
+                                                margin-top: -80px;
+                                                text-align: center;
+                                                height: 30px;
+                                            }
+                                            
+                                            h2 {
+                                                font-size: 13px;
+                                                text-transform: uppercase;
+                                                padding: 20px 0px 10px 0;
+                                                color: #fff;
+                                            }
+                                            
+                                            p {
+                                                padding: 20px 0px 10px 0;
+                                                font-size: 18px;
+                                                white-space: normal;
+                                            }
+                                            
+                                            .navegacion {
+                                                background-color: #474F57;
+                                                flex: 1 1 50%;
+                                                margin: 5px 10px 0 0px;
+                                            }
+                                            
+                                            .navegacion p {
+                                                color: #fff;
+                                                font-size: 18px;
+                                                font-family: Georgia;
+                                                text-align: center;
+                                                letter-spacing: 1.5;
+                                            }
+                                            
+                                            .navegacion a {
+                                                color: #fff;
+                                                font-size: 11px;
+                                                text-transform: uppercase;
+                                                padding: 0 10px;
+                                                letter-spacing: 2px;
+                                            }
+                                            
+                                            .aside {
+                                                /*background-color: #f73f52; */
+                                                flex: 2 1 auto;
+                                                margin: 10px 10px 10px 10;
+                                            }
+                                            
+                                            .aside img {
+                                                width: 100%;
+                                                transition: .8s;
+                                                transition-property: all;
+                                                transition-duration: 0.8s;
+                                                transition-timing-function: ease;
+                                                /*función de temporización de transición predeterminada: facilidad*/
+                                                transition-delay: 0s;
+                                            }
+                                            
+                                            h4 {
+                                                background: #485057;
+                                                color: #fff;
+                                                padding: 10px;
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                            .aside img .publicidad:hover {
+                                                width: 50%;
+                                                flex: 2 1 auto;
+                                                display: flex;
+                                                /*flex-flow: row wrap;*/
+                                                transition: .8s;
+                                                transition-property: all;
+                                                transition-duration: 0.8s;
+                                                transition-timing-function: ease;
+                                                /*función de temporización de transición predeterminada: facilidad*/
+                                                transition-delay: 0s;
+                                            }
+                                            
+                                            .publicidad {
+                                                background-color: rgb(217, 212, 221);
+                                                background-size: cover;
+                                            }
+                                            
+                                            .footer {
+                                                background: rgb(7, 7, 7);
+                                                display: flex;
+                                                justify-content: center;
+                                                margin-top: 20px;
+                                            }
+                                            
+                                            .footer .margen-interno {
+                                                width: 100%;
+                                                height: 200px;
+                                            }
+                                            
+                                            .direc {
+                                                width: 1000px;
+                                                height: 200;
+                                                color: rgb(156, 156, 73);
+                                            }
+                                            
+                                            .pie {
+                                                width: 700px;
+                                                height: 200;
+                                                text-align: center;
+                                                color: ivory;
+                                            }
+                                            
+                                            .pie {
+                                                color: rgb(61, 52, 52);
+                                                font-size: 20px;
+                                                padding: 20 10px;
+                                                letter-spacing: 2px;
+                                            }
+                                            
+                                            @media all and (max-width:1120px) {
+                                                .section {
+                                                    flex-direction: column;
+                                                }
+                                                .menu {
+                                                    flex-direction: column;
+                                                    /*cja flexible*/
+                                                    height: auto;
+                                                }
+                                                .aside {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                }
+                                                h1 {
+                                                    font-size: 25px;
+                                                    text-align: center;
+                                                }
+                                            }
+                                            
+                                            @media all and (max-width: 762px) {
+                                                .articulo {
+                                                    flex-direction: column;
+                                                }
+                                                h1 {
+                                                    font-size: 10px;
+                                                    text-align: center;
+                                                }
+                                            }
+                                            
+                                            @media all and (max-width:400px) {
+                                                .aside {
+                                                    flex-direction: column;
+                                                }
+                                            }
+                                            
+                                            .socialMedia {
+                                                flex-direction: column;
+                                                justify-content: center;
+                                            }
+                                        }
